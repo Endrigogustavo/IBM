@@ -7,46 +7,34 @@
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-   
+    <link rel="icon" type="image/png" sizes="32x32" href="icone.png">
     <title>Sobre Nós</title>
 </head>
 <header>
-    <nav class="nav-bar">
-          <div class="logo">
-              <a href="../Home/index.html"><h1>AFFORDABLE TOYS</h1></a>
-            </div>
-
-        <div class="nav-list">
-                 <ul>
-                    <li class="nav-item"><a href="../Home/index.html" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="../Produtos/shoppingCartWithJs-main/index.html" class="nav-link">Produtos</a></li>
-                    <li class="nav-item"><a href="../Contato/index.html" class="nav-link">Contato</a></li>
-                    <li class="nav-item"><a href="../Sobre Nós/Sobre Nós/sobre.html" class="nav-link">Sobre Nós</a></li>
-                 </ul>
-                 <div class="login-button">
-                    <button><a href="../cadastro-login/HTML/Login.Html">Entrar</a></button></div>
-                      
-    <div class="mobile-menu-icon">
-        <button onclick="menuShow()"> <img class="icon" src="menu_white_36dp.svg"></button">
-        
-                </div>
-
-        </div>
-        </nav>
-
-    </nav>
+  <nav>
+    <a class="logo" href="../Home/index.html">Affordable Toys</a>
     <div class="mobile-menu">
-        <ul>
-            <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Produtos</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Sobre Nós</a></li>
-        </ul>
-        <div class="login-button"> <button><a href="#">Entrar</a></button></div>
+       <div class="line1"></div>
+       <div class="line2"></div>
+       <div class="line3"></div>
     </div>
-</div>
+    <ul class="nav-list">
+        <li class="nav-itemzinho"><a href="../Home/index.html" class="paginas">Início</a></li>
+        <li class="nav-itemzinho"><a href="#" class="paginas">Produtos</a>
+               <div class="descendoodrop">
+                   <ul>
+                     <li ><a href="#" >Adaptados</a></li>
+                     <li ><a href="#" >Regulares</a></li>
+                   </ul>
+                 </div>   
+       </li>
+        <li class="nav-itemzinho"><a href="../Contato/index.html" class="paginas">Contato</a></li>
+        <li class="nav-itemzinho"><a href="../Sobre Nós/sobre.html" class="paginas">Sobre Nós</a></li>
+        <li class="nav-itemzinho"><a href="../cadastro-login/HTML/Login.Html" class="paginas login">Entrar</a></li>
+    </ul>
+ </nav>
 </header>
-<script src="script.js"></script>
+<script src="mobile-nav.js"></script>
 
 <section>
     <div class="fon"><h1>Quem somos?</h1>
@@ -97,7 +85,7 @@
         <div class="social-links">
           <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
           <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/affordabletoysofficial/"><i class="fab fa-instagram"></i></a>
           <a href="https://br.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
@@ -109,6 +97,17 @@
 
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-
+<!--V Libras-->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget("https://vlibras.gov.br/app");
+</script>
+<!--Fim V libras-->
 </body>
 </html>

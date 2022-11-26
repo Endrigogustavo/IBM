@@ -1,262 +1,226 @@
 @import url("https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap");
 
-* {
+@import url("https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap");
+
+*{
+  margin:0;
   padding: 0;
-  margin: 0;
   font-family: "Lato", Helvetica, Arial;
 }
 
-body {
-  background-color: #eee;
-  margin: 0px;
-}
-
-header {
-  background-color: #03555d;
-}
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  padding: 16px;
-  height: 75px;
-}
-
-.link a {
-  text-decoration: none;
-  color: #0a95a1;
-}
-
-.logo {
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-}
-.logo h1 {
-  font-family: "Hepta Slab", Helvetica, Arial;
-  color: #fff;
-}
-
-.logo a {
-  text-decoration: none;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
-}
-.nav-list ul {
-  display: flex;
-  justify-content: right;
-  list-style: none;
-}
-.nav-item {
-  margin: 0 15px;
-}
-.nav-link {
-  text-decoration: none;
-  font-size: 1.15rem;
-  color: #fff;
-  font-weight: 600;
-}
-.login-button button {
-  border: 2px solid #fafafa;
-  background-color: #ffffff;
-  padding: 10px 15px;
-  border-radius: 25px;
-}
-.login-button button a {
-  text-decoration: none;
-  color: #03555d;
-  font-weight: 500;
-}
-.mobile-menu-icon {
-  display: none;
-}
-.mobile-menu {
-  display: none;
-}
-@media screen and (max-width: 860px) {
-  .nav-bar {
+body{
     overflow-x: hidden;
-    padding: 15px;
-  }
-  .nav-item {
-    display: none;
-  }
-  .login-button {
-    display: none;
-  }
-  .mobile-menu-icon {
-    display: block;
-  }
-  .mobile-menu-icon button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  .mobile-menu ul {
+    
+}
+
+nav{
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 1rem;
-  }
-  .mobile-menu .nav-item {
-    display: block;
-    padding-top: 1.2rem;
-  }
-  .mobile-menu .login-button {
-    display: block;
-    padding: 1rem 2rem;
-  }
-  .mobile-menu .login-button button {
-    width: 100%;
-  }
-  .open {
-    display: block;
-  }
-}
-
-.main-login {
-  width: 100vw;
-  height: 100vh;
-  background: #eee;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.left-login {
-  width: 40vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.left-login > h1 {
-  color: #03555d;
-}
-.right-login {
-  width: 50vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.card-login {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 30px 35px;
-  background: #03555d;
-  border-radius: 20px;
-  box-shadow: 0px 10px 40px #00000056;
-}
-.card-login {
-  color: #ffffff;
-  font-weight: 800;
-  margin: 0;
-}
-
-.textfield {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin: 10px 0px;
-}
-
-.textfield > input {
-  width: 100%;
-  outline: none;
-  border: 2px solid #fafafa;
-  background: none;
-  padding: 0.6rem 1.2rem;
-  color: #fff;
-  font-weight: 500;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
-  border-radius: 25px;
-  transition: 0.3s;
-}
-
-.textfield > label {
-  margin-bottom: 10px;
-  width: 20vw;
-}
-
-.textfield > input::placeholder {
-  color: #ffffffde;
-}
-.btn-login {
-  width: 100%;
-  padding: 16px 0px;
-  margin: 25px;
-  font-size: 0.95rem;
-  border: 2px solid #fafafa;
-  border-radius: 25px;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 3px;
-  color: #03555d;
-  background: #ffffff;
-  cursor: pointer;
-}
-.link::a {
-  float: center;
-  width: 100%;
-  align-items: center;
-}
-
-@media screen and (max-width: 860px) {
-  .main-login {
-    padding: 1.5rem 1rem;
-    float: center;
-    width: center;
     align-items: center;
-    display: block;
-    flex-direction: column;
-    margin: 3px;
-  }
-  .left-login {
-    width: 80%;
-  }
-  .right-login {
+    justify-content: space-between;
+    background-color: #03555d;
+    height: 10vh;
+    max-height: 10vh;
+
+ }
+
+.logo{ /*Logo*/
+    font-size: 190%;
+    text-transform: uppercase;
     display: flex;
-    width: 120%;
-    display: block;
-  }
-
-  .left-login::h1 {
-    text-align: center;
-  }
-
-  @media screen and (max-width: 600px) {
-    .main-login {
-      padding: 1.5rem 0rem;
-      float: center;
-      width: center;
-      align-items: center;
-      display: block;
-      flex-direction: column;
-      margin-left: 50px;
-    }
-    .left-login {
-      width: 75%;
-    }
-    .right-login {
-      display: flex;
-      width: 100%;
-      display: block;
-      margin: -5px;
-    }
-
-    .left-login::h1 {
-      text-align: center;
-    }
-  }
+    align-items: center;;
+    font-weight: bold;
+    font-family: "Hepta Slab", Helvetica, Arial;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 0%;
 }
+
+.logo:hover{
+    color: #FFF;
+}
+
+.nav-list{ /*Todos os itens*/
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.nav-list a{
+    text-decoration: none;
+    transition: 0.3s;
+    
+    
+ }
+ 
+ .nav-list a:hover { /*Efeito de Seleção*/
+     opacity: 0.7;
+     color: white;
+ }
+
+
+.nav-list li{ /*Opções de seleção*/
+    margin-top: 0%;
+}
+
+.nav-itemzinho{
+     display: flex;
+}
+
+
+
+.paginas{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.10rem;
+    color: white;
+    margin-right: 16px;
+    margin-left: 15px;
+}
+
+.login{
+    color: #03555d;
+    background: #FFF;
+    border-radius: 20px;
+    padding: 9px 15px;
+    display: flex;
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+.login:hover{
+    background: #1cc2d1;
+    color: #FFF;
+    opacity: 1;
+}
+
+/*Dropdown*/
+.nav-itemzinho .descendoodrop  {
+    display: none;
+}
+
+.nav-itemzinho:hover .descendoodrop {
+     display: block;
+     position: absolute;
+     background-color: #03555d;
+     margin-top: 2%;
+     z-index: 1;
+     border-radius: 10px;
+     align-items: center;
+}
+
+.nav-itemzinho:hover .descendoodrop ul {
+    display: block;
+}
+
+.nav-itemzinho:hover .descendoodrop ul li{
+
+   text-decoration: none;
+   width: 100px;
+   margin-left: 15%;
+   font-weight: 10px;
+   
+}
+
+.nav-itemzinho:hover .descendoodrop ul li a{
+    color: #FFF;
+   
+}
+
+/*Mobile Menu*/
+.mobile-menu{ /*Logo*/
+    cursor: pointer;
+    display: none;
+    
+}
+.mobile-menu div{ /*Linhas*/
+    width: 32px;
+    height: 2px;
+    background: #FFF;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+
+/*Responsividade*/
+@media (max-width:972px){
+     body{
+        overflow-x: hidden;
+     }
+
+    .nav-list{
+        display: none;
+        position: absolute;
+        top: 9vh;
+        right: 0;
+        width: 50vw;
+        height: 45vh;
+        background: #03555d;
+        border-radius: 2px;
+        box-shadow: 12px 12px 15px 0 rgb(116, 179, 165);
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        overflow-x: hidden;
+        z-index: 1;
+        text-align: center;
+    }
+    .nav-list li{
+        margin-bottom: 5%;
+        margin-left: 0;
+        opacity: 0;
+        margin-top: 0%;
+        z-index: 1;
+    }
+
+    .nav-itemzinho:hover .descendoodrop {
+        display: none;
+
+   }
+
+    .mobile-menu{
+        display: block;
+        z-index: 1;
+    }
+
+   
+   .paginas{
+    margin: 0px;
+   }
+
+}
+
+.nav-list.active{
+    transform:translateX(0);
+    z-index: 1;
+    display: flex;
+    padding: 0;
+}
+
+/*Botão de Fechar*/
+.mobile-menu.active .line1{
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2{
+    opacity: 0;
+}
+
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/*Keyframes*/
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+

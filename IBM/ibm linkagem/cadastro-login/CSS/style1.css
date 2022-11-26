@@ -51,6 +51,7 @@ nav{
     text-decoration: none;
     transition: 0.3s;
     
+    
  }
  
  .nav-list a:hover { /*Efeito de Seleção*/
@@ -149,6 +150,7 @@ nav{
      }
 
     .nav-list{
+        display: none;
         position: absolute;
         top: 9vh;
         right: 0;
@@ -169,6 +171,7 @@ nav{
         margin-left: 0;
         opacity: 0;
         margin-top: 0%;
+        z-index: 1;
     }
 
     .nav-itemzinho:hover .descendoodrop {
@@ -181,15 +184,24 @@ nav{
         z-index: 1;
     }
 
-    .nav-list.active{
-        transform:translateX(0);
-        z-index: 1;
-    }
    
    .paginas{
     margin: 0px;
    }
 
+}
+
+@media (max-width: 386px){
+  .logo{
+      font-size: 170%;
+  }
+}
+
+.nav-list.active{
+    transform:translateX(0);
+    z-index: 1;
+    display: flex;
+    padding: 0;
 }
 
 /*Botão de Fechar*/

@@ -11,8 +11,6 @@ body{
     
 }
 
-
-
 nav{
     display: flex;
     align-items: center;
@@ -32,7 +30,7 @@ nav{
     font-family: "Hepta Slab", Helvetica, Arial;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    margin: 0 1%;
+    margin: 0 0%;
 }
 
 .logo:hover{
@@ -148,6 +146,7 @@ nav{
      }
 
     .nav-list{
+        display: none;
         position: absolute;
         top: 9vh;
         right: 0;
@@ -168,6 +167,7 @@ nav{
         margin-left: 0;
         opacity: 0;
         margin-top: 0%;
+        z-index: 1;
     }
 
     .nav-itemzinho:hover .descendoodrop {
@@ -180,10 +180,6 @@ nav{
         z-index: 1;
     }
 
-    .nav-list.active{
-        transform:translateX(0);
-        z-index: 1;
-    }
    
    .paginas{
     margin: 0px;
@@ -195,6 +191,13 @@ nav{
     .logo{
         font-size: 170%;
     }
+}
+
+.nav-list.active{
+    transform:translateX(0);
+    z-index: 1;
+    display: flex;
+    padding: 0;
 }
 
 /*Botão de Fechar*/
@@ -223,3 +226,5 @@ nav{
         transform: translateX(0);
     }
 }
+
+
