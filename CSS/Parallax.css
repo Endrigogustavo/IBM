@@ -1,0 +1,72 @@
+.wrapper{
+  width: 100%;
+  margin: 0 ;
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  
+  section.module.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+  }
+  
+  
+  section.module.parallax-1{
+    background-image: url("../img/Backgrounds/parallax2.jpg");
+  }
+  
+  section.module.parallax h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 520%;
+    z-index: 50;
+    text-transform: uppercase;
+  }
+
+  section.module.parallax p{
+    color: #FFF;
+    text-align: center;
+    font-size: 120%;
+    z-index: 10;
+  }
+
+  
+  @media all and (max-width: 820px) {
+
+    .module  p{
+      padding: 0 0%;
+    }
+  
+    .container{
+      margin:0;
+      padding:0;
+    }
+  
+    section.module.parallax h1 {
+      font-size: 260%;
+    }
+  }
+
+
+  
