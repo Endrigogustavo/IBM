@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style1.css">
+    <link rel="stylesheet" href="../teste/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="icone.png">
+    <title>Cadastro</title>
+    
+</head>
+<body>
+    <!--Menu-->
+    <nav>
+        <a class="logo" href="../../../index.html">Affordable Toys</a>
+        <div class="mobile-menu">
+           <div class="line1"></div>
+           <div class="line2"></div>
+           <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-itemzinho"><a href="../../../index.html" class="paginas">Início</a></li>
+            <li class="nav-itemzinho"><a href="../../Produtos/shoppingCartWithJs-main/index.html" class="paginas">Produtos</a>
+                   <div class="descendoodrop">
+                       <ul>
+                         <li ><a href="../../Produtos/shoppingCartWithJs-main/index.html" >Adaptados</a></li>
+                         <li ><a href="../../Produtos/shoppingCartWithJs-main/comuns.html" >Comuns</a></li>
+                       </ul>
+                     </div>   
+           </li>
+           <li class="nav-itemzinho"><a href="../../Contato/index.html" class="paginas">Contato</a></li>
+            <li class="nav-itemzinho"><a href="../../Sobre Nós/sobre.html" class="paginas">Sobre Nós</a></li>
+            <li class="nav-itemzinho"><a href="Login.Html" class="paginas login">Entrar</a></li>
+        </ul>
+     </nav>
+   
+<br><br><br>
+
+ <!--Cadastro-->
+
+  <!--Parte esquerda do site(imagem)-->
+<div class="main-login">
+    <div class="left-login">
+        <h1> Faça seu login </h1>
+        <img src="cadastro.svg" alt="login">
+    </div>
+
+     <!--Parte direita do site (card)-->
+    <div class="right-login">
+        <div class="card-login">
+            <h1>Cadastro</h1>
+            <br>
+             <!--Texto do card-->
+            <div class="textfield">
+
+                 <!--Parte de digito-->
+                <input type="email"  class="form__input"  autocomplete="off"name="email" placeholder="" id='Email' required>
+                <label for="Email" class="form__label" id='labelEmail'> 
+                    Email
+            </div>
+            <br> <br>
+                <div class="textfield">
+                   
+                    <input type='password' class="form__input"  autocomplete="off"name="Senha" id='Senha'placeholder="" required>
+                    <label for="senha" class="form__label" id='labelSenha'> 
+                        Senha</label>
+                        
+                </div>
+                <br> <br>
+
+                <div class="textfield">
+                   
+                    <input type="password"  class="form__input"  autocomplete="off"name="confirmSenha" placeholder="" id='confirmSenha'  required>
+                    <label for="confirmSenha" class="form__label" id='labelconfirmSenha'>
+                    
+                        Confirme sua Senha</label>
+                       
+                </div>
+                <br> <br>
+                <div class="textfield">
+                   
+                    <input type="tel" class="form__input"  autocomplete="off"name="nome" placeholder="" id='Tel' required>
+                    <label for="Tel" class="form__label" id='labelTel'>
+                        Telefone</label>
+
+                </div>
+                <br> <br>
+                <div class="textfield">
+                   
+                    <input type="date" class="form__input" name="Date" placeholder="Nascimento" id='Date' required>
+                    <label for="Date" id='labelDate'></label>
+                </div>
+<br> <br>
+                <!--corfirmado ou erro-->
+                <div id="myDialog" style="color: rgb(30, 255, 0);"></div>
+                <div id="myDialog2" style="color: rgb(255, 0, 0);"></div>
+                
+               
+                
+
+                <button class="btn-login" onclick="showDialog(senha)">Enviar</button>
+            </div>
+               
+        </div>
+    </div>
+</div>
+<script src="../JAVASCRIPT/script.js"></script>
+<script src="../JAVASCRIPT/mobile-nav.js"></script>
+<script>
+    function showDialog(senha) { 
+ if (senha.value == 3333 )
+ {
+   document.querySelector('#myDialog').innerHTML = "Correto";
+ }
+ else{
+    document.querySelector('#myDialog2').innerHTML = "Erro";
+} 
+}
+
+</script>
+
+<!--V Libras-->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget("https://vlibras.gov.br/app");
+  </script>
+  <!--Fim V libras-->
+  
+</body>
+</html>

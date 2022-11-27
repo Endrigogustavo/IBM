@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icone.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+
+  </head>
+  <body>
+   <header>
+    <nav>
+      <a class="logo" href="../../../index.html">Affordable Toys</a>
+      <div class="mobile-menu">
+         <div class="line1"></div>
+         <div class="line2"></div>
+         <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+          <li class="nav-itemzinho"><a href="../../../index.html" class="paginas">Início</a></li>
+          <li class="nav-itemzinho"><a href="#" class="paginas">Produtos</a>
+                 <div class="descendoodrop">
+                     <ul>
+                       <li ><a href="index.html" >Adaptados</a></li>
+                       <li ><a href="#" >Comuns</a></li>
+                     </ul>
+                   </div>   
+         </li>
+          <li class="nav-itemzinho"><a href="../../Contato/index.html" class="paginas">Contato</a></li>
+          <li class="nav-itemzinho"><a href="../../Sobre Nós/sobre.html" class="paginas">Sobre Nós</a></li>
+          <li class="nav-itemzinho"><a href="../../cadastro-login/HTML/Login.Html" class="paginas login">Entrar</a></li>
+      </ul>
+   </nav>
+          <div class="cart__counter">
+            <i class="fa fa-shopping-cart"></i><span id="total__counter">0</span>
+          </div>
+        </nav>
+        <div class="cart">
+            <div class="cart__items">
+                <div class="check_out"><h4>Valor Total : R$</h4><h4 class="total__cost">0</h4><a href="../Pagamento/Pay.html"><button class="btn check_out_btn">Confira</button></a> </div>
+            </div>
+        </div>
+        
+      </header>
+
+      <script src="mobile-nav.js"></script> <!--NavBar JavaScript-->
+
+
+      <div class="products">
+        <div class="product__element">
+          <input type="hidden" name="" id="product__id" value="1" />
+          <img src="./img/comuns/HomemAranha.png" alt="" srcset="" id="image" />
+          <h4 class="product__name">Homem Aranha NWH ZdToys</h4>
+          <h5 class="product__price">R$220.00</h5>
+          <div class="btn__add__to__cart">Adicionar ao Carrinho</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product__id" value="2" />
+          <img src="./img/comuns/HomemdeFerro.png" alt="" srcset="" id="image" />
+          <h4 class="product__name">Homem de Ferro Mk 85 ZdToys</h4>
+          <h5 class="product__price">R$200.00</h5>
+          <div class="btn__add__to__cart">Adicionar ao Carrinho</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product__id" value="3" />
+          <img src="./img/comuns/Flash.png" alt="" srcset="" id="image" />
+          <h4 class="product__name">Flash Sh Figuarts</h4>
+          <h5 class="product__price">R$169.00</h5>
+          <div class="btn__add__to__cart">Adicionar ao Carrinho</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product__id" value="4" />
+          <img src="./img/comuns/CarroRemoto.png" alt="" srcset="" id="image" />
+          <h4 class="product__name">Carro de Controle Remoto</h4>
+          <h5 class="product__price">R$120.00</h5>
+          <div class="btn__add__to__cart">Adicionar ao Carrinho</div>
+        </div>
+          <div class="product__element">
+            <input type="hidden" name="" id="product__id" value="5" />
+            <img src="./img/comuns/LegoSonic.png" alt="" srcset="" id="image" />
+            <h4 class="product__name">Lego Sonic</h4>
+            <h5 class="product__price">R$600.00</h5>
+            <div class="btn__add__to__cart">Adicionar ao Carrinho</div>
+        </div>
+        <div class="product__element">
+          <input type="hidden" name="" id="product__id" value="6" />
+          <img src="./img/comuns/Tanjiro.png" alt="" srcset="" id="image" />
+          <h4 class="product__name">Action Figure Tanjiro</h4>
+          <h5 class="product__price">R$102.00</h5>
+          <div class="btn__add__to__cart">Adicionar ao Carrinho</div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container" id="footerzinho">
+        <div class="row">
+          <div class="col" id="footer-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="../../Sobre Nós/sobre.html">Sobre Nós</a></li>
+              <li><a href="#">Nossos Serviços</a></li>
+              <li><a href="#">Pólitica de Privacidade</a></li>
+            </ul>
+          </div>
+          <div class="col" id="footer-col">
+            <h4>Suporte</h4>
+            <ul>
+              <li><a href="../../Contato/index.html">Envio</a></li>
+              <li><a href="../../Contato/index.html">Devolução</a></li>
+              <li><a href="../../Contato/index.html">Status do Pedido</a></li>
+              <li><a href="../../Contato/index.html">Opção de Pagamento</a></li>
+            </ul>
+          </div>
+          <div class="col" id="footer-col">
+            <h4>Loja</h4>
+            <ul>
+              <li><a href="#">Comuns</li>
+              <li><a href="index.html">Adaptados</a></li>
+            </ul>
+          </div>
+          <div class="col" id="footer-col">
+            <h4>Nos Siga</h4>
+            <div class="social-links">
+              <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/affordabletoysofficial/"><i class="fab fa-instagram"></i></a>
+              <a href="https://br.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
+  
+    <script src="main.js"></script>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/css.css">
+    <link rel="stylesheet" href="../teste/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="icone.png">  
+    <title>Login</title>
+    
+</head>
+<body>
+
+    <!-- Menu botões -->
+
+    <nav>
+        <a class="logo" href="../../../index.html">Affordable Toys</a>
+        <div class="mobile-menu">
+           <div class="line1"></div>
+           <div class="line2"></div>
+           <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-itemzinho"><a href="../../../index.html" class="paginas">Início</a></li>
+          <li class="nav-itemzinho"><a href="../../Produtos/shoppingCartWithJs-main/index.html" class="paginas">Produtos</a>
+                 <div class="descendoodrop">
+                     <ul>
+                       <li ><a href="../../Produtos/shoppingCartWithJs-main/index.html" >Adaptados</a></li>
+                       <li ><a href="../../Produtos/shoppingCartWithJs-main/comuns.html" >Comuns</a></li>
+                     </ul>
+                   </div>   
+         </li>
+          <li class="nav-itemzinho"><a href="../../Contato/index.html" class="paginas">Contato</a></li>
+          <li class="nav-itemzinho"><a href="../../Sobre Nós/sobre.html" class="paginas">Sobre Nós</a></li>
+          <li class="nav-itemzinho"><a href="#" class="paginas login">Entrar</a></li>
+        </ul>
+     </nav>
+ 
+
+  
+    
+<br><br><br>
+
+<!--login-->
+
+<form>
+
+     <!--Parte esquerda (imagem)-->
+
+   <div class="main-login">
+      <div class="left-login">
+        <h1 class="logi"> Faça seu login </h1>
+        <img src="login.svg " alt="login">
+   </div>
+         <br><br>
+
+
+          <!--parte direita do card (login)-->
+
+    <div class="right-login">
+        <div class="card-login">
+            <h1>Login</h1>
+<br><br>
+
+           <!--Texto Email-->
+
+            <div class="textfield">
+                <input type="email"  class="form__input" autocomplete="off" placeholder="" id='Email' name="nome" required>
+                  <label for="email" class="form__label" id='labelEmail'> 
+                     <img src="../IMG/perfil.png " height="25px" >  
+                      Email
+                  <label>
+       
+            </div>
+                  <br><br>
+
+                   <!--Texto Senha-->
+
+            <div class="textfield">
+                 <input type='password' id='Senha' class="form__input" autocomplete="off" placeholder="" name="Senha" required id='Senha'>
+                  <label for="Senha"  class="form__label" id='labelSenha'>
+                        <img src="../IMG/padlock.png" height="25px" >
+                        Senha
+                </label>
+                   
+                       
+                </div>
+                <br>
+
+                 <!--Confirmado ou erro-->
+
+                <div id="myDialog" style="color: rgb(30, 255, 0);"></div>
+                <div id="myDialog2" style="color: rgb(255, 0, 0);"></div>
+
+                <button class="btn-login" onclick="showDialog(senha)">Entrar</button>
+
+               <div class="link">Ainda não tem uma conta? <a href="Cadastro1.html"> Crie uma já.</a></div>
+        </div>
+    </div>
+</div>
+</form>
+
+
+
+<script src="../JAVASCRIPT/script.js"></script>
+<script src="../JAVASCRIPT/mobile-nav.js"></script>
+<script>
+    function showDialog(senha) { 
+ if (senha.value == 3333 )
+ {
+   document.querySelector('#myDialog').innerHTML = "Correto";
+ }
+ else{
+    document.querySelector('#myDialog2').innerHTML = "Erro";
+} 
+}
+
+</script>
+
+<!--V Libras-->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget("https://vlibras.gov.br/app");
+</script>
+<!--Fim V libras-->
+</body>
+</html>

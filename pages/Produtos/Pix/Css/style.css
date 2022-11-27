@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap");
+
+*{
+    font-family: "Lato", Helvetica, Arial;
+    margin:0; 
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container{
+  margin-left: 200px;
+  position: absolute;
+  
+}
+
+.container .card-container .front{
+    margin-top: 35px;
+    background:linear-gradient(45deg, #03555d, #048894);
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    padding:25px;
+   
+}
+
+
+
